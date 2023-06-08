@@ -1,0 +1,75 @@
+html {
+    font-size: 22px;
+    font: cursive;
+}
+.text-center {
+    color: #ffffff;
+    font-size: 22px;
+    font: cursive;
+    transform: translate(-25%, 10%);
+}
+.TitlePrayer {
+    color: #ffffff;
+    font-size: 22px;
+    font: sans-serif;
+}
+.TablePrayer {
+    color: #ffffff;
+    font-size: 22px;
+    font: sans-serif;
+}
+.DetailsPrayer {
+    color: #ffffff;
+    font-size: 22px;
+    font: sans-serif;
+}
+.Create {
+    color: #ffffff;
+    font-size: 22px;
+    font: sans-serif;
+}
+.Edit {
+    color: #ffffff;
+    font-size: 22px;
+    font: sans-serif;
+}
+.EditPrayer {
+    color: #ffffff;
+    font-size: 22px;
+    font: sans-serif;
+}
+.PrayerDelete {
+    color: #ffffff;
+    font-size: 22px;
+    font: sans-serif;
+}
+.PrayerCreate {
+    color: #ffffff;
+    font-size: 22px;
+    font: sans-serif;
+}
+.PrayerPolicy {
+    color: #ffffff;
+    font-size: 22px;
+    font: sans-serif;
+}
+
+@media (min-width: 768px) {
+    html {
+    font-size: 16px;
+    
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-image: url('../img/girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}

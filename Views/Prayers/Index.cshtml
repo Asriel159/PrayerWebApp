@@ -1,0 +1,38 @@
+﻿@model IEnumerable<PrayerWebApp.Models.Prayer>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class=" TitlePrayer">
+    <h1>Prayer List</h1>
+
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+</div>
+<table class="TablePrayer">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PrayerDescription)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrayerDescription)
+            </td>
+
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,26 @@
+﻿@model PrayerWebApp.Models.Prayer
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+<div class="DetailsPrayer">
+    <h1>Prayer details</h1>
+    <h4>Prayer</h4>
+    <hr />
+    <dl class="row">
+        
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PrayerMoreDetails)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PrayerMoreDetails)
+        </dd>
+    </dl>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+</div>
